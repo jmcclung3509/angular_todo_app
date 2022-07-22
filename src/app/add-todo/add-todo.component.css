@@ -1,0 +1,14 @@
+.form-control {
+    width: 40%;
+    padding: 5px 13px;
+}
+
+.search-container {
+    display: flex;
+    margin-bottom: 50px;
+}
+
+.btn {
+    padding: 7px 13px;
+    margin-bottom: 0;
+}

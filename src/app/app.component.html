@@ -1,0 +1,20 @@
+<div class="todo">
+  <h1> Todo List</h1>
+  <app-add-todo (saveTodo)="handleSave($event)"></app-add-todo>
+
+  <h3 *ngIf="todoData.length==0; else todoView"> You have nothing ToDo</h3>
+  <ng-template #todoView>
+    <h3> Todo List</h3>
+    <div class="todo-data" *ngFor="let item of todoData">
+      <app-todo [todoData]="item"></app-todo>
+      <!-- <h6 class="todo">{{item.text}}</h6>
+      <div class="form-check">
+        <label class="form-check-label" for="flexCheckDefault">
+          Completed
+        </label>
+        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+      </div> -->
+    </div>
+  </ng-template>
+
+</div>

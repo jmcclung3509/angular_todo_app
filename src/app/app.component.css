@@ -1,0 +1,14 @@
+.todo-data {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.todo {
+    margin: 0 20px;
+
+}
+
+.todo h1 {
+    margin-bottom: 50px;
+}
